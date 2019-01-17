@@ -1,0 +1,35 @@
+header {
+    height: 50px;
+    background-image: linear-gradient(to right, #1d5993, #22955e);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.header-container {
+    line-height: 50px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 24px;
+}
+html {
+    min-height: 100%;
+}
+
+main, footer {
+    max-width: 1200px;
+    margin: 20px auto 20px auto;
+}
+
+footer {
+    text-align: center;
+}
+
+#search-bar {
+    width: 70%;
+    height: 30px;
+}
+
+#search-button {
+    height: 35px;
+}
