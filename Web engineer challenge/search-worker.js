@@ -17,12 +17,13 @@ function sendData(data, index) {
     postMessage({item: data, index: index});
 }
 
+// Filters the results based on the keywords
 function filterResults(results) {
-
     let keywordsList = keywords.split(/[ ,]+/);
     for (let i = 0; i < results.length; i++) {
         keywordsList.forEach(searchKeyword => {
             if (results[i].keywords.search(searchKeyword) != -1) {
+                // This allows to continuously display search results
                 sendData(results[i], i);
             }
         });

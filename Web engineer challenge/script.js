@@ -6,12 +6,14 @@ const AVAILABLE_SEARCH_BTN_HTML = '<i class="fas fa-search"></i>';
 const LOADING_SEARCH_BTN_HTML = '<i class="fa fa-spinner fa-spin"></i>';
 const ENTER_KEYCODE = 13;
 
+// Enter shortcut for search
 $(document).keyup((e) => {
     if (e.keyCode == ENTER_KEYCODE) {
         search();
     }
 });
 
+// Search clear handling
 $(() => {
     $("#search-bar").keyup(() => {
         if ($("#search-bar").val() == "") {
