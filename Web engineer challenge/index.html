@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Web engineer challenge</title>
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/scripts/header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -18,8 +19,16 @@
     </header>
     <main>
         <div id="search-container">
-            <input id="search-bar" placeholder="Enter the keywords">
-            <button id="search-button">Search</button>
+            <input class="form-control" id="search-bar" placeholder="Enter the keywords">
+            <button type="button" class="btn btn-primary" id="search-button" onclick="search()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div id="search-result-container">
+            
+        </div>
+        <h2>Favourites</h2>
+        <div id="favourites-container">
         </div>
     </main>
     <footer>
