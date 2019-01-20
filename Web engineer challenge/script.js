@@ -12,6 +12,14 @@ $(document).keyup((e) => {
     }
 });
 
+$(() => {
+    $("#search-bar").keyup(() => {
+        if ($("#search-bar").val() == "") {
+            $("#search-result-container").html("<p>Enter some keywords and press enter to start your search !</p>");
+        }
+    });
+});
+
 function search() {
     $("#search-result-container").html("");
     // Check browser compatibility
