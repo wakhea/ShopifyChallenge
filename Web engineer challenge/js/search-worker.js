@@ -34,7 +34,7 @@ function filterResults(results) {
 
 onmessage = function (e) {
     // Receiving keywords
-    keywords = e.data;
+    keywords = e.data.toLowerCase();
 }
 
 getJson();
