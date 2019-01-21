@@ -6,6 +6,12 @@ header {
     text-align: center;
 }
 
+#content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Sticky footer */
 .wrapper {
     min-height: calc(100vh - 50px);
 }
