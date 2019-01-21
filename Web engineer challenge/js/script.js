@@ -61,7 +61,7 @@ function formatData(item, index, isFavourite) {
 // Start worker and disable search until worker termination
 function startWorker() {
     items = [];
-    worker = new Worker('search-worker.js');
+    worker = new Worker('./js/search-worker.js');
     // To send the keywords to the worker
     worker.postMessage($("#search-bar").val());
     $("#search-button").prop('disabled', true);
